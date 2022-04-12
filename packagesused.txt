@@ -1,3 +1,73 @@
+Microservices Assignment 2022
+
+Problem Statement
+Design & Develop a Backend System for E-Services (like Urban Clap), The business idea is to 
+bridge the gap between service providers and service receivers.
+• Service Receivers (Consumers) can hire electricians, yoga trainers etc. They can 
+avail all these services via placing an order through the Mobile App.
+• When a service is requested, Admin team will assign the request to the Service 
+Providers according to the Area and Availability, the professionals (Service 
+providers) in that area get a notification. They can either accept or deny.
+• If the request is accepted, the Service Receiver will get a notification with respect 
+to the booking confirmation and service provider details & Service Provider will 
+also get the Detailed Job Description & Other details (ex- Address, Contact Number 
+of Consumer).
+
+Consideration
+• Solution should be designed and developed using Microservices Architecture.
+• Use an API Gateway for all the incoming traffic. You are free to choose any available API 
+Gateway
+• For interservice communication, you can synchronous or asynchronous or hybrid 
+communication. Please provide a writeup of at least 50 words explaining your choice of 
+communication.
+• Usage of Design Patterns Make sure to implement at least 2 design patterns.
+• E.g., Service Discovery, Circuit Breaker etc
+• Logging and Tracing should be available for each service in a centralized location 
+(Optional).
+
+Deliverables
+1. A writeup of identified microservices for above use case along with reasonable explanation 
+(with High Level Diagram).
+2. API Endpoints (request/response JSONs) (Preferably Swagger Documentation or Postman 
+Collections)
+3. A writeup of at least 50 words explaining your choice of communication Interservice 
+Communication Approach Write up & Implementation.
+4. Source code of all microservices (uploaded on GitHub or Gitlab)
+5. Docker images to be built using DockerFile and pushed to docker hub (links to be 
+submitted in document)
+6. Docker Compose YAML File, Intention is that your application should be able to get up 
+and running on any other system properly just through Docker Compose.
+
+Microservices Assignment 2022 (page 2)
+
+Guidelines:
+1. This assignment only requires to identify all the microservices for above mentioned use 
+case and expose the API endpoints.
+2. No User interface is required.
+3. Mention relevant assumptions taken while implementing application (one positive end to 
+end flow and one negative scenario are enough from the implementation point of view).
+Assumptions Like:
+• you can ignore the Location part, just use the random number logic to assign the 
+Service providers
+• For Notification, no external integration required, Logs will work for us.
+• Soon…
+4. Your solution should be able to build/compile and run.
+5. Standard coding guideline should be strictly followed.
+6. Integration with database is not mandatory, in memory data structures (lists, maps) can 
+be used to store data temporarily for the assignment.
+7. Choose the proper communication and microservices design patterns as per the scenario
+and design.
+
+Priority wise parameters on which we will be evaluating the assignment:
+• Write-up for Microservices Identification with HLD
+• Expose API Endpoints (request/response)
+• Implementation of API Gateway & Service Discovery 
+• Implementation for all microservices with respect to Use cases & 
+Interservice Communication Approach
+• Cross Cutting Concerns (Circuit-Breaker Pattern)
+• Deployment using Docker-Compose
+
+
 auto mapper
 dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjections
 dotnet add package Microsoft.EntityFrameworkCore
